@@ -25,11 +25,11 @@
 % INPUT :  pack    - STRING - name of the package you want to look for
 % OUTPUT:  P       - TRUE/FALSE - Package is installed and loaded or not
 %
-% USAGE:   [P] = ispkg("zenity");
+% USAGE:   P = ispkg("zenity");
 %
 % Author: Hani Andreas Ibrahim
 
-function [P] = ispkg(pack)
+function P = ispkg(pack)
 
 % Checking argument
 if (nargin == 0); print_usage(); endif

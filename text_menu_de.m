@@ -18,17 +18,17 @@
 
 ## -*- texinfo -*-
 ## @deftypefn {Function File} {} text_menu_de (@var{title}, @var{opt1}, @dots{})
-## NOTE: Formely known as "menu()" in Octave version < 4. In Octave 4 "menu()" is a
-## GUI widget.
 ##
-## The output of this version is in German language.
-## 
 ## Print a title string followed by a series of options.  Each option will
 ## be printed along with a number.  The return value is the number of the
 ## option selected by the user.  This function is useful for interactive
 ## programs.  There is no limit to the number of options that may be passed
 ## in, but it may be confusing to present more than will fit easily on one
-## screen.
+## screen. Output in German language.
+##
+## NOTE: Formely known as "menu()" in Octave versions < 4. In Octave 4 "menu()" 
+## is a GUI widget. text_menu() has a text-UI. Just renamed the original function 
+## menu().
 ##
 ## EXAMPLE:
 ##@example

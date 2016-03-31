@@ -1,6 +1,6 @@
 ## Octave tool functions
 
-The library is under development and just for my needs. If you find them useful, feel free to copy it. I will try to keep them compatible to Matlab.
+The library is under development and just for my needs. If you find them useful, feel free to copy it. 
 
 It contains wrapper for modified usage of core functions, helper functions, etc.
 

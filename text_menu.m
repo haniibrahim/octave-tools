@@ -18,15 +18,17 @@
 
 ## -*- texinfo -*-
 ## @deftypefn {Function File} {} text_menu (@var{title}, @var{opt1}, @dots{})
-## NOTE: Formely known as "menu()" in Octave version < 4. In Octave 4 "menu()" is a
-## GUI widget.
-## 
+##
 ## Print a title string followed by a series of options.  Each option will
 ## be printed along with a number.  The return value is the number of the
 ## option selected by the user.  This function is useful for interactive
 ## programs.  There is no limit to the number of options that may be passed
 ## in, but it may be confusing to present more than will fit easily on one
 ## screen.
+##
+## NOTE: Formely known as "menu()" in Octave versions < 4. In Octave 4 "menu()" 
+## is a GUI widget. text_menu() has a text-UI. Just renamed the original function
+## menu().
 ##
 ## EXAMPLE:
 ##@example
@@ -41,14 +43,14 @@
 ## @seealso{disp, printf, input}
 ## @end deftypefn
 
-## Author: jwe (renamed for Octave 4 by Hani 
+## Author: jwe (renamed for Octave 4 by Hani A. Ibrahim)
 
 function num = text_menu (title, varargin)
 
   if (nargin < 2)
     print_usage ();
   endif
-
+  
   ## Force pending output to appear before the menu.
 
   fflush (stdout);
