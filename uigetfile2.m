@@ -54,7 +54,7 @@ function path = uigetfile2(init_path, dialog_name)
   if (~exist("init_path","var")); init_path = ''; endif
   if (~exist("dialog_name","var")); dialog_name = ''; endif
   [f,p] = uigetfile(init_path, dialog_name); # f=filename | p=path
-  if isgeversion(4) % Octave Version >= 4.0
+  if isgeversion(4) || ~(isgeversion(4) && isguirunning()) % Octave Version >= 4.0 or < 4 but CLI version
     path = strcat(p, f);
   else % Octave version < 4.0 (e.g. 3.8)
     if ispc()
